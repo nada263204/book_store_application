@@ -14,8 +14,8 @@ class bookstoreApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData()
-          .copyWith(scaffoldBackgroundColor: const Color(0XFF100B20)),
+      theme: ThemeData.dark()
+          .copyWith(scaffoldBackgroundColor: const  Color.fromARGB(255, 39, 31, 68)),
       home: const SplashView(),
     );
   }
