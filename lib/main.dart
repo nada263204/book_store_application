@@ -6,13 +6,17 @@ void main() {
   runApp(const bookstoreApp());
 }
 
+// ignore: camel_case_types
 class bookstoreApp extends StatelessWidget {
   const bookstoreApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: SplashView(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData()
+          .copyWith(scaffoldBackgroundColor: const Color(0XFF100B20)),
+      home: const SplashView(),
     );
   }
 }
