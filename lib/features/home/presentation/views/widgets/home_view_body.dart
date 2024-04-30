@@ -1,4 +1,5 @@
 import 'package:book_store_application/features/home/presentation/views/widgets/custom_appbar.dart';
+import 'package:book_store_application/features/home/presentation/views/widgets/custom_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -10,9 +11,11 @@ class HomeViewBody extends StatelessWidget {
       child: Column(
         children:[
           CustomAppBar(),
+          CustomListViewItem()
         ]
       ),
     );
   }
 }
+
 
